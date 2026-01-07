@@ -31,8 +31,8 @@ with st.form("churn_predictor_form"):
     # Numerical Inputs
     senior_citizen = st.selectbox("Senior Citizen?", [0, 1], help="0: No, 1: Yes")
     tenure = st.slider("Tenure (months)", min_value=0, max_value=72, value=12)
-    monthly_charges = st.number_input("Monthly Charges ($")", min_value=0.0, max_value=150.0, value=50.0, step=0.01)
-    total_charges = st.number_input("Total Charges ($")", min_value=0.0, max_value=10000.0, value=500.0, step=0.01)
+    monthly_charges = st.number_input('Monthly Charges ($)', min_value=0.0, max_value=150.0, value=50.0, step=0.01)
+    total_charges = st.number_input('Total Charges ($")', min_value=0.0, max_value=10000.0, value=500.0, step=0.01)
 
     # Categorical Inputs
     gender = st.selectbox("Gender", ['Female', 'Male'])
